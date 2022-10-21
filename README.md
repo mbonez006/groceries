@@ -2,8 +2,8 @@
 
 The project includes 2 Directories:
 
-- groceries-frontend (The view side of the application)
-- groceries-backend-api (The backend API)
+- `groceries-frontend` (The view side of the application)
+- `groceries-backend-api` (The backend API)
 
 
 ## Version number
