@@ -10,7 +10,7 @@ The project includes 2 Directories:
 `5b8d0fd276b6d288905ed2f63a934e057e8feca2`
 
 ## Requirements
-- Node >16
+- Node >=16
 - Unix Terminal Window
 
 ## Frameworks & Tools USed
