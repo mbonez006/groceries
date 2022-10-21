@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    block head
+      title= `Groceries`
+      meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+      link(rel='stylesheet', href='/style.css')
+      
+  block content
+    body
+        .container
+          .row
+            .col-md-12           
+              .pageHeader
+                img(src='logo.png' width='150' height='50').logo
+                h3 Groceries
+          .row 
+            .col-md-9(style="border-right: solid;")
+              table.table.center
+                thead
+                  tr
+                    th(scope='col') Item
+                    th(scope='col') Action
+                tbody
+                  each item in groceries
+                    tr
+                      td
+                        if item.purchased == false 
+                          p #{item.name}
+                        else 
+                          s #{item.name}
+                      td                     
+                        if item.purchased == false
+                          form(action='/' method='post')
+                            input(type='hidden' name='markAsPurchased' value=item.name)
+                            button.btn.btn-dark(type='submit') Mark as Purchased
+                        else 
+                          button.btn.btn-secondary(type='button' disabled) Purchased
+            .col-md-3 
+              h5#add-grocery(style="padding-top: 5%;").text-center Add Grocery Item
+              form(action="/" method="POST")
+                  .row
+                      .col-md-12
+                          input.form-control(type='text' name="itemToAdd" placeholder='item*' required='true' style="margin-bottom: 5%;") 
+                  .row
+                      .col-md-12
+                          button.btn.btn-info.btn-block.waves-effect.waves-light(type='submit') Submit
