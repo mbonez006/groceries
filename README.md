@@ -21,6 +21,7 @@ The project includes 2 Directories:
 - Babel Transpiler
 - Eslint
 - Jest
+- SCSS
 
 ## How to run
 ### Getting backend API server up and running.
