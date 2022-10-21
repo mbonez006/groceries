@@ -44,4 +44,5 @@ npm run start
 
 You should see `Running on http://localhost:7080` - indicating that we now have the frontend running on port 7080.
 
-Next open up a browser and navigate to `http://localhost:7080` - this should display the Groceries application.
+### Open up Browser.
+Next open up a web browser and navigate to `http://localhost:7080` - this should display the Groceries application.
