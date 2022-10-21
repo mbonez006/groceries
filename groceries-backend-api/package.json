@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node ./src/server/index.js",
     "start:dev": "nodemon -e js,json ./src/server/index.js",
-    "test:watch": "NODE_ENV= jest --watchAll"
+    "test:watch": "NODE_ENV= jest /groceries-backend-api/ --watchAll",
+    "test": "NODE_ENV= jest /groceries-backend-api/"
   },
   "dependencies": {
     "@babel/core": "^7.18.5",

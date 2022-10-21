@@ -7,9 +7,11 @@
   "scripts": {
     "start": "npm run build && node ./src/server/index.js",
     "start:dev": "nodemon -e js,pug,json ./src/server/index.js",
-    "test:watch": "NODE_ENV= jest --watchAll",
+    "test:watch": "NODE_ENV= jest /groceries-frontend/ --watchAll",
+    "test:coverage": "NODE_ENV= jest /groceries-frontend/ --coverage",
+    "test": "NODE_ENV= jest /groceries-frontend/",
     "build": "rm -rf dist && webpack --mode production",
-    "build:dev": "rm -rf dist && webpack --mode development --watch"
+    "build:dev": "rm -rf dist && webpack --mode development --watch"    
   },
   "dependencies": {
     "@babel/core": "^7.18.5",

@@ -1,8 +1,4 @@
-import {
-  groceriesHandler,
-  groceriesPostHandler,
-  addGroceriesHandler,
-} from "../groceries";
+import { groceriesHandler, groceriesPostHandler } from "../groceries";
 import * as groceriesServices from "../../services/groceriesServices";
 
 jest.mock("../../services/groceriesServices");

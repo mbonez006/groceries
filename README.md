@@ -46,3 +46,11 @@ You should see `Running on http://localhost:7080` - indicating that we now have 
 
 ### Open up Browser.
 Next open up a web browser and navigate to `http://localhost:7080` - this should display the Groceries application.
+
+### How to run Tests
+Opening a new terminal window, and change directory into either of the frontend or backend directory, then run:
+
+```
+npm install
+npm run test
+```
